@@ -1,0 +1,155 @@
+* {
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --btn-ligado: hsl(212, 21%, 14%);
+    --bg-cream: hsl(30, 38%, 92%);
+    --btn-green: hsl(158, 36%, 37%);
+    --p-color: hsl(228, 12%, 48%);
+    --div-branca: hsl(0, 0%, 100%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cream {
+    width: 90rem;
+    padding: 280px 320px;
+    background: var(--bg-cream);
+    box-shadow: 2px 20px 20px rgb(235, 225, 225);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto {
+    width: 25rem;
+}
+
+.foto-img {
+    display: block;
+    max-width: 100%;
+}
+
+.text {
+    width: 25rem;
+    padding: 3rem;
+    background: var(--div-branca);
+    border-radius: 6px;
+}
+
+.text-p {
+    color: var(--p-color);
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.text-p1 {
+    color: var(--p-color);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-preco {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.text-green {
+    color: var(--btn-green);
+    font-size: 50px;
+    font-family: 'Fraunces', serif;
+}
+
+.text-riscado {
+    text-decoration: line-through;
+    color: var(--p-color);
+}
+
+h1 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    padding: 20px 80px;
+    border-radius: 10px;
+    color: var(--div-branca);
+    background: var(--btn-green);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--btn-ligado);
+}
+
+@media(max-width: 375px) {
+    .container {
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+    .cream {
+        margin: 0 auto;
+        padding: 10px 0px;
+
+    }
+
+    .text {
+        padding: 4rem;
+    }
+
+    .foto-img {
+        border-radius: 10px;
+    }
+
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        padding: 10px 60px;
+
+    }
+}
+
+@media(min-width: 376px) and (max-width:767Px) {
+    .cream {
+        padding: 10px 0px;
+        width: 20rem;
+
+    }
+    .container {
+        margin: auto;
+    }
+    .foto-img {
+        display: none;
+    }
+    button {
+        padding: 15px 50px;
+    }
+
+}
