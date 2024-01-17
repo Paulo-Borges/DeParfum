@@ -22,6 +22,15 @@ body {
 }
 
 .cream {
+
+/* com os comentários de @isabellatressino */
+
+    /* width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
     width: 90rem;
     padding: 280px 320px;
     background: var(--bg-cream);
@@ -29,8 +38,13 @@ body {
 }
 
 .container {
+
+    /* com os comentários de @isabellatressino */
+
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .foto {
